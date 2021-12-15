@@ -7,7 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CadeauCardComponent implements OnInit {
   @Input() cadeau: any;
+  @Input() index: any;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.cadeau);
+  }
 }
